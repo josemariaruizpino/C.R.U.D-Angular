@@ -1,5 +1,10 @@
 # JoseMariaRuizKenjo
 
+La aplicación además de los requisitos obligatorios y opcionales está adaptada tanto a movil como a escritorio, además de añadir varios efectos visuales.
+
+
+=============================================================================================================================================================
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
 ## Development server
