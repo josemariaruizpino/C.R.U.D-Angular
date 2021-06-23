@@ -1,0 +1,12 @@
+<div class="gallery-container">
+<div class="item" *ngFor="let artist of artistList">
+  <div routerLink="/artist/{{artist._id}}">
+    <h4 class="item__title">{{ artist.name}}</h4>
+    <img routerLink="/artist/{{artist._id}}"class="item__img" [src]="artist.photoUrl">
+    <span class="button-flex">
+      <button class="button-delete" (click)="deleteArtist(artist._id)" onClick="window.location.reload()">Borrar</button>
+      <button class="button" routerLink="/update-artist/{{artist._id}}">Editar</button>
+    </span>
+  </div>
+</div>
+</div>

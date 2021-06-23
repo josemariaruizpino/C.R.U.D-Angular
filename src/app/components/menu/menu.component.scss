@@ -1,0 +1,119 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+
+  
+    //   margin-left: 40px;
+  
+    &__link {
+      background-color: #f05924;
+      color: white;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 5px;
+      // border-radius: 10px;
+      width: 6vw;
+      text-decoration: none;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+  
+    &__link:hover {
+      border-radius: 10px;
+      background-color: #a03c18;
+    }
+  
+    &__link--active {
+      border: 2px solid black;
+      background-color: black;
+      color: #f05924;
+      border: 1px solid #f05924;
+    }
+  }
+  
+  @media (max-width:1790px) {
+    .menu{
+        &__link{
+            width: 7vw;
+        }
+    }
+}
+
+@media (max-width:1532px) {
+  .menu{
+      &__link{
+          width: 8vw;
+          font-size: 1.2em;
+      }
+  }
+}
+
+@media (max-width:1334px) {
+  .menu{
+      &__link{
+          width: 8vw;
+      }
+  }
+}
+
+@media (max-width:1072px) {
+  .menu{
+      &__link{
+          width: 9vw;
+      }
+  }
+}
+
+@media (max-width:953px) {
+  .menu{
+      &__link{
+          width: 10vw;
+      }
+  }
+}
+
+@media (max-width:856px) {
+  .menu{
+      &__link{
+          width: 11vw;
+      }
+  }
+}
+
+@media (max-width:779px) {
+  .menu{
+      &__link{
+          width: 11vw;
+          font-size: 1em;
+      }
+  }
+}
+
+@media (max-width:650px) {
+  .menu{
+      &__link{
+          width: 13vw;
+          font-size: 1em;
+      }
+  }
+}
+
+@media (max-width:650px) {
+  .menu{
+      &__link{
+          width: 14vw;
+          font-size: 0.8em;
+      }
+  }
+}
+
+
+@media (max-width:406px) {
+  .menu{
+      &__link{
+          width: 15vw;
+          font-size: 0.7em;
+      }
+  }
+}

@@ -1,0 +1,54 @@
+<h2 class="main-text">Manage elements</h2>
+<div class="form-flex">
+  <div>
+     <form
+      class="form"
+      action="/"
+      method="post"
+      [formGroup]="editAlbum"
+      (ngSubmit)="updateAlbums()"
+    >
+      <label class="form__title" for="title">Title:</label>
+      <input
+        class="form__field"
+        type="text"
+        name="title"
+        id="title"
+        formControlName="title"
+      />
+
+
+      <label class="form__title" for="coverUrl">Cover Image:</label>
+
+      <input
+        class="form__big-field"
+        type="text"
+        name="coverUrl"
+        id="coverUrl"
+        formControlName="coverUrl"
+      />
+
+      <label class="form__title" for="year">year:</label>
+
+      <input
+        class="form__big-field"
+        type="text"
+        name="year"
+        id="year"
+        formControlName="year"
+      />
+
+      <label class="form__title" for="genre">genre:</label>
+
+      <input
+        class="form__big-field"
+        type="text"
+        name="genre"
+        id="genre"
+        formControlName="genre"
+      />
+
+      <input class="form__button" type="submit" value="Save"/>
+    </form>
+  </div>
+</div>

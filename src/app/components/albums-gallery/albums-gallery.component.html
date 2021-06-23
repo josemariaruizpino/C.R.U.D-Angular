@@ -1,0 +1,13 @@
+    <div class="gallery-container">
+    <div class="item" *ngFor="let album of albumList">
+      <div routerLink="/album/{{album._id}}">
+      <h4 class="item__title">{{ album.title}}</h4>
+      <img  class="item__img" [src]="album.coverUrl">
+      <p class="item__genre">{{album.genre}}</p>
+      <span class="button-flex">
+      <button class="button-delete" (click)="deleteAlbum(album._id)" onClick="window.location.reload()">Borrar</button>
+      <button class="button" routerLink="/update/{{album._id}}">Editar</button>
+    </span>
+    </div>
+</div>
+</div>

@@ -1,0 +1,66 @@
+<p class="main-text">Add new album</p>
+<div class="form-flex">
+  <div>
+    <!-- isSubmitted &&  (ngSubmit)="submitted()"-->
+    <form
+      class="form"
+      action="/"
+      method="post"
+      [formGroup]="newAlbum"
+      (ngSubmit)="addAlbums()"
+    >
+      <label class="form__title" for="title">Title:</label>
+      <input
+        class="form__field"
+        type="text"
+        name="title"
+        id="title"
+        formControlName="title"
+      />
+
+      <!-- <label class="form__title" for="artistId">Artist:</label>
+
+      <input
+        class="form__field"
+        type="text"
+        name="artistId"
+        id="artistId"
+        formControlName="artistId"
+      /> -->
+
+      <label class="form__title" for="coverUrl">Cover Image:</label>
+
+      <input
+        class="form__big-field"
+        type="text"
+        name="coverUrl"
+        id="coverUrl"
+        formControlName="coverUrl"
+      />
+
+      <label class="form__title" for="year">year:</label>
+
+      <input
+        class="form__big-field"
+        type="text"
+        name="year"
+        id="year"
+        formControlName="year"
+      />
+
+      <label class="form__title" for="genre">genre:</label>
+
+      <input
+        class="form__big-field"
+        type="text"
+        name="genre"
+        id="genre"
+        formControlName="genre"
+      />
+
+
+      <!-- <button type="submit" >Guardar</button> -->
+      <input class="form__button" type="submit" value="Save"/>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="big-container">
+  <div class="stroke-container">
+    <img class="img" [src]="artist.photoUrl" />
+    <div class="item">
+      <h1 class="item__title">{{ artist.name }}</h1>
+      <h2 class="item__year">{{ artist.birthdate | date}}</h2>
+      <p class="item__genre">{{ artist.deathDate | date}}</p>
+      <button class="button" routerLink="/artist/{{artist._id}}/add-album">Add Album.</button>
+    </div>
+  </div>
+</div>
